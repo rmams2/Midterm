@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Items Catalog</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <span style="color: #ff0000;">Bulk</span>
+            <span style="color: #00ff66;">Cut</span>
+            <span style="color: #0000ff;">Balance</span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="breakfast.html">Breakfast</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="dinner.html">Dinner</a></li>
+                <li><a href="snacks_dessert.html">Snacks/Dessert</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Selected Items</h2>
+        <p style="text-align: center;">Proceed to other tabs to select items.</p>
+        <div id="imageContainer" class="image-container"></div>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Calories</th>
+                    <th scope="col">Fat (g)</th>
+                    <th scope="col">Protein (g)</th>
+                </tr>
+            </thead>
+            <tbody id="selectedItemsTable">
+            </tbody>
+            <tfoot>
+                <tr id="totalsRow">
+                    <th colspan="2">Totals:</th>
+                    <td id="totalCalories">0</td>
+                    <td id="totalFat">0</td>
+                    <td id="totalProtein">0</td>
+                </tr>
+            </tfoot>
+        </table>        
+        <button type="button" class="btn btn-danger" onclick="clearSelectedItems()">Clear</button>
+        <p><br>Please clear when done.</p>
+    </div>
+
+    <footer>
+        <div style="display: flex; justify-content: space-between;">
+            <p>&copy;BulkCutBalance, 2024</p>
+            <p style="text-align: right;"><a href="aboutUs.html">About Us</a></p>
+        </div>     
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>

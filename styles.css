@@ -1,0 +1,75 @@
+/* CSS styles for your website */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+}
+
+header {
+    font-size: 40px;
+    font-family: fantasy;
+    text-align: center;
+    background-color: #000000;
+    color: #ad0707;
+    padding: 10px 0;
+}
+
+p{
+    text-align: left;
+}
+
+h2{
+    text-align: center;
+    color: #000000;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+.image-container img {
+    display: inline;
+}
+
+#imageContainer {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px;
+    border-bottom: 1px solid #000000;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+}
+
+
+nav .bigger {
+    font-size: 24px;
+}
